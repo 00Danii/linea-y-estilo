@@ -22,7 +22,7 @@ export const categories: Category[] = [
     icon: "👕",
     color: "from-primary to-primary/50",
     description: "Última colección de temporada",
-    pdfUrl: "/pdfs/Basicos.pdf",
+    pdfUrl: "https://files.catbox.moe/2wvv8s.pdf",
   },
   {
     id: "botas",
@@ -38,6 +38,6 @@ export const categories: Category[] = [
     icon: "🧑‍🦱",
     color: "from-primary to-primary/50",
     description: "Más de 700 modelos disponibles",
-    pdfUrl: "/pdfs/caballeros.pdf",
+    pdfUrl: "https://files.catbox.moe/uheu94.pdf",
   },
 ];
