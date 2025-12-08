@@ -1,15 +1,25 @@
-import { notFound } from "next/navigation";
+"use client";
+
+import { useEffect } from "react";
+import { useParams, useRouter } from "next/navigation";
 import PDFFullscreen from "../../../components/pdf-viewer";
 import { categories } from "../../../lib/categories";
 
-export default async function PdfPage({
-  params,
-}: {
-  params: { id: string } | Promise<{ id: string }>;
-}) {
-  const p = await params;
-  const category = categories.find((c) => c.id === p.id);
-  if (!category) return notFound();
+export default function PdfPageClient() {
+  const params = useParams();
+  const router = useRouter();
+  const id = params?.id as string | undefined;
+
+  const category = id ? categories.find((c) => c.id === id) : undefined;
+
+  useEffect(() => {
+    if (!id || !category) {
+      // redirige a inicio si no existe la categoría (evita usar notFound en cliente)
+      router.replace("/");
+    }
+  }, [id, category, router]);
+
+  if (!category) return null;
 
   return <PDFFullscreen category={category} />;
 }
