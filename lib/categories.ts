@@ -14,7 +14,7 @@ export const categories: Category[] = [
     icon: "🧥",
     color: "from-primary to-primary/50",
     description: "Última colección de temporada",
-    pdfUrl: "/pdfs/abrigos.pdf",
+    pdfUrl: "https://files.catbox.moe/dox51w.pdf",
   },
   {
     id: "basicos-y-comodos",
@@ -30,7 +30,7 @@ export const categories: Category[] = [
     icon: "👢",
     color: "from-primary to-primary/50",
     description: "Más de 700 modelos disponibles",
-    pdfUrl: "/pdfs/botad.pdf",
+    pdfUrl: "https://files.catbox.moe/b18xal.pdf",
   },
   {
     id: "caballeros",
