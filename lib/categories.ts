@@ -1,7 +1,6 @@
 export interface Category {
   id: string;
   name: string;
-  icon: string;
   color: string;
   description: string;
   pdfUrl: string;
@@ -11,7 +10,6 @@ export const categories: Category[] = [
   {
     id: "abrigos",
     name: "Abrigos",
-    icon: "🧥",
     color: "from-primary to-primary/50",
     description: "Última colección de temporada",
     pdfUrl: "https://files.catbox.moe/dox51w.pdf",
@@ -19,7 +17,6 @@ export const categories: Category[] = [
   {
     id: "basicos-y-comodos",
     name: "Basicos y Comodos",
-    icon: "👕",
     color: "from-primary to-primary/50",
     description: "Última colección de temporada",
     pdfUrl: "https://files.catbox.moe/2wvv8s.pdf",
@@ -27,7 +24,6 @@ export const categories: Category[] = [
   {
     id: "botas",
     name: "Botas",
-    icon: "👢",
     color: "from-primary to-primary/50",
     description: "Más de 700 modelos disponibles",
     pdfUrl: "https://files.catbox.moe/b18xal.pdf",
@@ -35,7 +31,6 @@ export const categories: Category[] = [
   {
     id: "caballeros",
     name: "Caballeros",
-    icon: "🧑‍🦱",
     color: "from-primary to-primary/50",
     description: "Más de 700 modelos disponibles",
     pdfUrl: "https://files.catbox.moe/uheu94.pdf",
